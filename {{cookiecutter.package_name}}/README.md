@@ -1,12 +1,10 @@
-<!--
-<p align="center">
-  <img src="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/raw/main/docs/source/logo.png" height="150">
-</p>
--->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/repo_logo_dark.png" width='100%'>
+  <source media="(prefers-color-scheme: light)" srcset="./assets/repo_logo_light.png" width='100%'>
+  <img alt="Project logo" src="/assets/" width="100%">
+</picture>
 
-<h1 align="center">
-  {{cookiecutter.package_name}}
-</h1>
+<br>
 
 <p align="center">
     <a href="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/actions/workflows/tests.yml">
@@ -30,6 +28,14 @@
         <img src='https://img.shields.io/badge/code%20style-black-000000.svg' alt='Code style: black' />
     </a>
 </p>
+
+<h1 align="center">
+  {{cookiecutter.package_name}}
+</h1>
+
+
+<br>
+
 
 {{cookiecutter.short_description}}
 
