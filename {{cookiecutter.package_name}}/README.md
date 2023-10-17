@@ -12,29 +12,22 @@
     <a href="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/actions/workflows/tests.yml">
         <img alt="Tests" src="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/workflows/Tests/badge.svg" />
     </a>
+    <a href="https://doi.org/10.48550/arXiv.2304.05376">
+        <img alt="DOI" src="https://zenodo.org/badge/DOI/10.48550/arXiv.2304.05376.svg" />
+    </a>
     <a href="https://pypi.org/project/{{cookiecutter.package_name}}">
         <img alt="PyPI" src="https://img.shields.io/pypi/v/{{cookiecutter.package_name}}" />
-    </a>
-    <a href="https://pypi.org/project/{{cookiecutter.package_name}}">
-        <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/{{cookiecutter.package_name}}" />
-    </a>
-    <a href="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/blob/main/LICENSE">
-        <img alt="PyPI - License" src="https://img.shields.io/pypi/l/{{cookiecutter.package_name}}" />
     </a>
     <a href='https://{{cookiecutter.package_name}}.readthedocs.io/en/latest/?badge=latest'>
         <img src='https://readthedocs.org/projects/{{cookiecutter.package_name}}/badge/?version=latest' alt='Documentation Status' />
     </a>
-    <a href="https://codecov.io/gh/schwallergroup/{{cookiecutter.github_repository_name}}/branch/main">
-        <img src="https://codecov.io/gh/schwallergroup/{{cookiecutter.github_repository_name}}/branch/main/graph/badge.svg" alt="Codecov status" />
-    </a>  
     <a href="https://github.com/cthoyt/cookiecutter-python-package">
-        <img alt="Cookiecutter template from @cthoyt" src="https://img.shields.io/badge/Cookiecutter-snekpack-blue" /> 
+        <img alt="Cookiecutter template from @schwallergroup" src="https://img.shields.io/badge/Cookiecutter-schwallergroup-blue" /> 
+    <a href="https://schwallergroup.github.io">
+        <img alt="Learn more about @schwallergroup" src="https://img.shields.io/badge/Learn more-SchwallerGroup-blue" /> 
     </a>
     <a href='https://github.com/psf/black'>
         <img src='https://img.shields.io/badge/code%20style-black-000000.svg' alt='Code style: black' />
-    </a>
-    <a href="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/blob/main/.github/CODE_OF_CONDUCT.md">
-        <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant"/>
     </a>
 </p>
 
@@ -45,18 +38,7 @@
 > TODO show in a very small amount of space the **MOST** useful thing your package can do.
 > Make it as short as possible! You have an entire set of docs for later.
 
-{% if cookiecutter.command_line_interface|lower != "false" %}### Command Line Interface
 
-The {{cookiecutter.package_name}} command line tool is automatically installed. It can
-be used from the shell with the `--help` flag to show all subcommands:
-
-```shell
-$ {{cookiecutter.package_name}} --help
-```
-
-> TODO show the most useful thing the CLI does! The CLI will have documentation auto-generated
-> by `sphinx`.
-{% endif %}
 ## 🚀 Installation
 
 <!-- Uncomment this section after your first ``tox -e finish``
@@ -74,22 +56,23 @@ The most recent code and data can be installed directly from GitHub with:
 $ pip install git+https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}.git
 ```
 
-## 👐 Contributing
+## ✅ Citation
 
-Contributions, whether filing an issue, making a pull request, or forking, are appreciated. See
-[CONTRIBUTING.md](https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/blob/master/.github/CONTRIBUTING.md) for more information on getting involved.
+Philippe Schwaller et al. "Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction". ACS Central Science 2019 5 (9), 1572-1583
+```bibtex
+@article{doi:10.1021/acscentsci.9b00576,
+    author = {Schwaller, Philippe and Laino, Teodoro and Gaudin, Théophile and Bolgar, Peter and Hunter, Christopher A. and Bekas, Costas and Lee, Alpha A.},
+    title = {Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction},
+    journal = {ACS Central Science},
+    volume = {5},
+    number = {9},
+    pages = {1572-1583},
+    year = {2019},
+    doi = {10.1021/acscentsci.9b00576},
+}
+```
 
-## 👋 Attribution
 
-### ⚖️ License
-
-The code in this package is licensed under the MIT License.
-
-<!--
-### 📖 Citation
-
-Citation goes here!
--->
 
 <!--
 ### 🎁 Support
@@ -110,18 +93,20 @@ This project has been supported by the following grants:
 | DARPA                                                    | [Automating Scientific Knowledge Extraction (ASKE)](https://www.darpa.mil/program/automating-scientific-knowledge-extraction) | HR00111990009   |
 -->
 
-### 🍪 Cookiecutter
-
-This package was created with [@audreyfeldroy](https://github.com/audreyfeldroy)'s
-[cookiecutter](https://github.com/cookiecutter/cookiecutter) package using [@cthoyt](https://github.com/cthoyt)'s
-[cookiecutter-snekpack](https://github.com/cthoyt/cookiecutter-snekpack) template.
 
 ## 🛠️ For Developers
+
 
 <details>
   <summary>See developer instructions</summary>
 
-The final section of the README is for if you want to get involved by making a code contribution.
+
+
+### 👐 Contributing
+
+Contributions, whether filing an issue, making a pull request, or forking, are appreciated. See
+[CONTRIBUTING.md](https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/blob/master/.github/CONTRIBUTING.md) for more information on getting involved.
+
 
 ### Development Installation
 
