@@ -1,5 +1,5 @@
-{{cookiecutter.package_name_stylized}} |release| Documentation
-{{'=' * (cookiecutter.package_name_stylized|length)}}========================
+{{cookiecutter.package_name}} |release| Documentation
+{{'=' * (cookiecutter.package_name|length)}}========================
 
 Cookiecutter
 ------------

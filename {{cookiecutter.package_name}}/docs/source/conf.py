@@ -168,7 +168,7 @@ htmlhelp_basename = "{{cookiecutter.package_name}}_doc"
 #     (
 #         master_doc,
 #         '{{cookiecutter.package_name}}.tex',
-#         '{{cookiecutter.package_name_stylized}} Documentation',
+#         '{{cookiecutter.package_name}} Documentation',
 #         author,
 #         'manual',
 #     ),
@@ -182,7 +182,7 @@ man_pages = [
     (
         master_doc,
         "{{cookiecutter.package_name}}",
-        "{{cookiecutter.package_name_stylized}} Documentation",
+        "{{cookiecutter.package_name}} Documentation",
         [author],
         1,
     ),
@@ -197,7 +197,7 @@ texinfo_documents = [
     (
         master_doc,
         "{{cookiecutter.package_name}}",
-        "{{cookiecutter.package_name_stylized}} Documentation",
+        "{{cookiecutter.package_name}} Documentation",
         author,
         "{{cookiecutter.author_name}}",
         "{{cookiecutter.short_description}}",

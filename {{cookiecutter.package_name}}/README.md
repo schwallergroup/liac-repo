@@ -1,16 +1,16 @@
 <!--
 <p align="center">
-  <img src="https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/raw/main/docs/source/logo.png" height="150">
+  <img src="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/raw/main/docs/source/logo.png" height="150">
 </p>
 -->
 
 <h1 align="center">
-  {{cookiecutter.package_name_stylized}}
+  {{cookiecutter.package_name}}
 </h1>
 
 <p align="center">
-    <a href="https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/actions/workflows/tests.yml">
-        <img alt="Tests" src="https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/workflows/Tests/badge.svg" />
+    <a href="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/actions/workflows/tests.yml">
+        <img alt="Tests" src="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/workflows/Tests/badge.svg" />
     </a>
     <a href="https://pypi.org/project/{{cookiecutter.package_name}}">
         <img alt="PyPI" src="https://img.shields.io/pypi/v/{{cookiecutter.package_name}}" />
@@ -18,14 +18,14 @@
     <a href="https://pypi.org/project/{{cookiecutter.package_name}}">
         <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/{{cookiecutter.package_name}}" />
     </a>
-    <a href="https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/blob/main/LICENSE">
+    <a href="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/blob/main/LICENSE">
         <img alt="PyPI - License" src="https://img.shields.io/pypi/l/{{cookiecutter.package_name}}" />
     </a>
     <a href='https://{{cookiecutter.package_name}}.readthedocs.io/en/latest/?badge=latest'>
         <img src='https://readthedocs.org/projects/{{cookiecutter.package_name}}/badge/?version=latest' alt='Documentation Status' />
     </a>
-    <a href="https://codecov.io/gh/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/branch/main">
-        <img src="https://codecov.io/gh/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/branch/main/graph/badge.svg" alt="Codecov status" />
+    <a href="https://codecov.io/gh/schwallergroup/{{cookiecutter.github_repository_name}}/branch/main">
+        <img src="https://codecov.io/gh/schwallergroup/{{cookiecutter.github_repository_name}}/branch/main/graph/badge.svg" alt="Codecov status" />
     </a>  
     <a href="https://github.com/cthoyt/cookiecutter-python-package">
         <img alt="Cookiecutter template from @cthoyt" src="https://img.shields.io/badge/Cookiecutter-snekpack-blue" /> 
@@ -33,7 +33,7 @@
     <a href='https://github.com/psf/black'>
         <img src='https://img.shields.io/badge/code%20style-black-000000.svg' alt='Code style: black' />
     </a>
-    <a href="https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/blob/main/.github/CODE_OF_CONDUCT.md">
+    <a href="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/blob/main/.github/CODE_OF_CONDUCT.md">
         <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant"/>
     </a>
 </p>
@@ -71,13 +71,13 @@ $ pip install {{cookiecutter.package_name}}
 The most recent code and data can be installed directly from GitHub with:
 
 ```bash
-$ pip install git+https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}.git
+$ pip install git+https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}.git
 ```
 
 ## 👐 Contributing
 
 Contributions, whether filing an issue, making a pull request, or forking, are appreciated. See
-[CONTRIBUTING.md](https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/blob/master/.github/CONTRIBUTING.md) for more information on getting involved.
+[CONTRIBUTING.md](https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/blob/master/.github/CONTRIBUTING.md) for more information on getting involved.
 
 ## 👋 Attribution
 
@@ -128,7 +128,7 @@ The final section of the README is for if you want to get involved by making a c
 To install in development mode, use the following:
 
 ```bash
-$ git clone git+https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}.git
+$ git clone git+https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}.git
 $ cd {{cookiecutter.github_repository_name}}
 $ pip install -e .
 ```
@@ -142,14 +142,14 @@ run reproducibly with:
 $ tox
 ```
 
-Additionally, these tests are automatically re-run with each commit in a [GitHub Action](https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}/actions?query=workflow%3ATests).
+Additionally, these tests are automatically re-run with each commit in a [GitHub Action](https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/actions?query=workflow%3ATests).
 
 ### 📖 Building the Documentation
 
 The documentation can be built locally using the following:
 
 ```shell
-$ git clone git+https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}.git
+$ git clone git+https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}.git
 $ cd {{cookiecutter.github_repository_name}}
 $ tox -e docs
 $ open docs/build/html/index.html

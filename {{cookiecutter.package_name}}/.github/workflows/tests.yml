@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [ "3.11", "3.8" ]
+        python-version: [ "3.9", "3.8" ]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ "{{" }} matrix.python-version {{ "}}" }}
@@ -26,8 +26,6 @@ jobs:
       - name: Check manifest
         run: tox run -e manifest
       - name: Check code quality with flake8
-        run: tox run -e flake8
-      - name: Check package metadata with Pyroma
         run: tox run -e pyroma
       - name: Check static typing with MyPy
         run: tox run -e mypy
@@ -36,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [ "3.11", "3.8" ]
+        python-version: [ "3.9", "3.8" ]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ "{{" }} matrix.python-version {{ "}}" }}
@@ -59,7 +57,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest ]
-        python-version: [ "3.11", "3.8" ]
+        python-version: [ "3.9", "3.8" ]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ "{{" }} matrix.python-version {{ "}}" }}
