@@ -12,10 +12,10 @@ Here are some resources to familiarize yourself with some concepts used in this 
 
 ## 🛠️ Getting Started
 
-1. Install `cookiecutter` with:
+1. Install `cookiecutter` and `GitPython` with:
 
    ```shell
-   $ pip install cookiecutter
+   $ pip install cookiecutter GitPython
    ```
 
 2. Run `cookiecutter` with:
@@ -31,6 +31,8 @@ Here are some resources to familiarize yourself with some concepts used in this 
    the files, and push to your remote.
 
 ## 💪 Features
+
+On top of snekpack's features, I automated the setting up Git as for us it's always the same.
 
 Your new python package will have the following:
 
