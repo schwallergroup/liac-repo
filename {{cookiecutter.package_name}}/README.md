@@ -19,7 +19,7 @@
     <a href='https://{{cookiecutter.package_name}}.readthedocs.io/en/latest/?badge=latest'>
         <img src='https://readthedocs.org/projects/{{cookiecutter.package_name}}/badge/?version=latest' alt='Documentation Status' />
     </a>
-    <a href="https://github.com/cthoyt/cookiecutter-python-package">
+    <a href="https://github.com/schwallergroup/liac-repo">
         <img alt="Cookiecutter template from @schwallergroup" src="https://img.shields.io/badge/Cookiecutter-schwallergroup-blue" /> 
     <a href="https://schwallergroup.github.io">
         <img alt="Learn more about @schwallergroup" src="https://img.shields.io/badge/Learn more-SchwallerGroup-blue" /> 

@@ -13,10 +13,11 @@ DOCS = PROJECT_DIRECTORY.joinpath("docs", "source")
 
 def git_init():
     os.chdir(PROJECT_DIRECTORY)
+    repo_url = "https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}.git"
     empty_repo = Repo.init()
     origin = empty_repo.create_remote(
         'origin',
-        "https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}.git"
+        repo_url
     )
     empty_repo.git.add(all=True)
     empty_repo.index.commit("first_commit")
@@ -25,7 +26,9 @@ def git_init():
 
     try:
         # Try to push to GitHub
-        main_branch.git.push('--set-upstream', main_branch.remote().name, 'main')  # attempt push, ignore errors
+        origin.push(refspec="main:main")
+        empty_repo.heads.main.set_tracking_branch(origin.refs.main)
+        print(f'\nRepo successfully pushed to GitHub!\nCheck it out at {repo_url}\n')
     except:
         # If it fails, it's probably because the repo doesn't exist yet
         print("Failed to push to GitHub. Create a repo on @schwallergroup with name {{cookiecutter.github_repository_name}}")
