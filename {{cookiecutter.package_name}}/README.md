@@ -76,6 +76,14 @@ Philippe Schwaller et al. "Molecular Transformer: A Model for Uncertainty-Calibr
     year = {2019},
     doi = {10.1021/acscentsci.9b00576},
 }
+
+@Misc{this_repo,
+  author = { {{cookiecutter.author_name}} },
+  title = { {{cookiecutter.package_name}} - {{cookiecutter.short_description}} },
+  howpublished = {Github},
+  year = {2023},
+  url = {https://github.com/schwallergroup/{{ cookiecutter.github_repository_name }} }
+}
 ```
 
 
