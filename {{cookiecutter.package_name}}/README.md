@@ -39,13 +39,13 @@
 
 {{cookiecutter.short_description}}
 
-## 💪 Getting Started
+## 🔥 Usage
 
 > TODO show in a very small amount of space the **MOST** useful thing your package can do.
 > Make it as short as possible! You have an entire set of docs for later.
 
 
-## 🚀 Installation
+## 👩‍💻 Installation
 
 <!-- Uncomment this section after your first ``tox -e finish``
 The most recent release can be installed from
@@ -85,27 +85,6 @@ Philippe Schwaller et al. "Molecular Transformer: A Model for Uncertainty-Calibr
   url = {https://github.com/schwallergroup/{{ cookiecutter.github_repository_name }} }
 }
 ```
-
-
-
-<!--
-### 🎁 Support
-
-This project has been supported by the following organizations (in alphabetical order):
-
-- [Harvard Program in Therapeutic Science - Laboratory of Systems Pharmacology](https://hits.harvard.edu/the-program/laboratory-of-systems-pharmacology/)
-
--->
-
-<!--
-### 💰 Funding
-
-This project has been supported by the following grants:
-
-| Funding Body                                             | Program                                                                                                                       | Grant           |
-|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| DARPA                                                    | [Automating Scientific Knowledge Extraction (ASKE)](https://www.darpa.mil/program/automating-scientific-knowledge-extraction) | HR00111990009   |
--->
 
 
 ## 🛠️ For Developers
@@ -152,7 +131,7 @@ $ git clone git+https://github.com/schwallergroup/{{cookiecutter.github_reposito
 $ cd {{cookiecutter.github_repository_name}}
 $ tox -e docs
 $ open docs/build/html/index.html
-``` 
+```
 
 The documentation automatically installs the package as well as the `docs`
 extra specified in the [`setup.cfg`](setup.cfg). `sphinx` plugins
