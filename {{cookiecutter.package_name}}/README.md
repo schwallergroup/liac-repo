@@ -1,3 +1,6 @@
+
+
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/repo_logo_dark.png" width='100%'>
   <source media="(prefers-color-scheme: light)" srcset="./assets/repo_logo_light.png" width='100%'>
@@ -6,28 +9,17 @@
 
 <br>
 
-<p align="center">
-    <a href="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/actions/workflows/tests.yml">
-        <img alt="Tests" src="https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/workflows/Tests/badge.svg" />
-    </a>
-    <a href="https://doi.org/10.48550/arXiv.2304.05376">
-        <img alt="DOI" src="https://zenodo.org/badge/DOI/10.48550/arXiv.2304.05376.svg" />
-    </a>
-    <a href="https://pypi.org/project/{{cookiecutter.package_name}}">
-        <img alt="PyPI" src="https://img.shields.io/pypi/v/{{cookiecutter.package_name}}" />
-    </a>
-    <a href='https://{{cookiecutter.package_name}}.readthedocs.io/en/latest/?badge=latest'>
-        <img src='https://readthedocs.org/projects/{{cookiecutter.package_name}}/badge/?version=latest' alt='Documentation Status' />
-    </a>
-    <a href="https://github.com/schwallergroup/liac-repo">
-        <img alt="Cookiecutter template from @schwallergroup" src="https://img.shields.io/badge/Cookiecutter-schwallergroup-blue" /> 
-    <a href="https://schwallergroup.github.io">
-        <img alt="Learn more about @schwallergroup" src="https://img.shields.io/badge/Learn more-SchwallerGroup-blue" /> 
-    </a>
-    <a href='https://github.com/psf/black'>
-        <img src='https://img.shields.io/badge/code%20style-black-000000.svg' alt='Code style: black' />
-    </a>
-</p>
+[![tests](https://github.com/schwallergroup/{{cookiecutter.github_repository_name}}/actions/workflows/tests.yml/badge.svg)](https://github.com/schwallergroup/{{cookiecutter.github_repository_name}})
+[![DOI:10.1101/2020.07.15.204701](https://zenodo.org/badge/DOI/10.48550/arXiv.2304.05376.svg)](https://doi.org/10.48550/arXiv.2304.05376)
+[![PyPI](https://img.shields.io/pypi/v/{{cookiecutter.github_repository_name}})](https://img.shields.io/pypi/v/{{cookiecutter.github_repository_name}})
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/{{cookiecutter.github_repository_name}})](https://img.shields.io/pypi/pyversions/{{cookiecutter.github_repository_name}})
+[![Documentation Status](https://readthedocs.org/projects/{{cookiecutter.package_name}}/badge/?version=latest)](https://{{cookiecutter.package_name}}.readthedocs.io/en/latest/?badge=latest)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Cookiecutter template from @SchwallerGroup](https://img.shields.io/badge/Cookiecutter-schwallergroup-blue)](https://github.com/schwallergroup/liac-repo)
+[![Learn more @SchwallerGroup](https://img.shields.io/badge/Learn%20%0Amore-schwallergroup-blue)](https://schwallergroup.github.io)
+
+
+
 
 <h1 align="center">
   {{cookiecutter.package_name}}
